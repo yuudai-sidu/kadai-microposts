@@ -11,17 +11,13 @@ Rails.application.routes.draw do
     member do
       get :followings
       get :followers
-      
+      get :likes
     end
     collection do
       get :search
   end
 end
-    resources :users, only: [:index, :show, :new, :create] do
-    member do
-      get :likes
-    end
-  end
+    
 
 
   

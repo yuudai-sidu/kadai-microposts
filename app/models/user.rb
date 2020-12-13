@@ -49,10 +49,8 @@ class User < ApplicationRecord
     self.likes.include?(micropost)
   end
    
-   #追加
-  def current_user
-    @current_user ||= User.find_by(id: session[:user_id])
-  end
+  
+ 
   
   
 end
